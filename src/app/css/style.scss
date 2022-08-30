@@ -1,0 +1,65 @@
+@import "null";
+$bgColor: #C4C4C4;
+$text: #000;
+
+body {
+  margin: 0 auto;
+  padding: 40px;
+  background-color: $bgColor;
+  color: $text;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 800px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+}
+
+.search__form {
+  display: flex;
+}
+
+.search__inp {
+  font-size: 50px;
+  width: 100%;
+  padding: 10px;
+}
+
+.search__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.search__list-item {
+  background: #E3E3E3;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.selected__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.selected__item {
+  display: flex;
+  justify-content: space-between;
+  background: #E27BEB;
+  padding: 15px;
+  border: 1px solid #000;
+}
+
+.selected__txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.selected__del-btn {
+
+}
