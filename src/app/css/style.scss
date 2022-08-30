@@ -40,6 +40,10 @@ body {
   background: #E3E3E3;
   padding: 10px;
   border: 1px solid #000;
+  cursor: pointer;
+  &:hover {
+    background: #65CDF9;
+  }
 }
 
 .selected__list {
@@ -50,6 +54,7 @@ body {
 .selected__item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #E27BEB;
   padding: 15px;
   border: 1px solid #000;
@@ -61,5 +66,28 @@ body {
 }
 
 .selected__del-btn {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 22px;
+    top: 8px;
+    width: 3px;
+    height: 30px;
+    transform: rotate(45deg);
+    background: #FF0000;
 
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 22px;
+    top: 8px;
+    width: 3px;
+    height: 30px;
+    transform: rotate(-45deg);
+    background: #FF0000;
+  }
 }
