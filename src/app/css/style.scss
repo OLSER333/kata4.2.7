@@ -12,8 +12,12 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 40px;
   max-width: 800px;
+  overflow: hidden;
+  margin: 0 auto
+
 }
 
 .search {
@@ -63,6 +67,7 @@ body {
 .selected__txt {
   display: flex;
   flex-direction: column;
+  gap: 10px
 }
 
 .selected__del-btn {
